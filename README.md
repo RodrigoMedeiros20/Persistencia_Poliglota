@@ -42,6 +42,7 @@ O projeto foi construído com as seguintes tecnologias:
 
 A aplicação é estruturada como um projeto multi-páginas do Streamlit, uma evolução da estrutura sugerida na proposta acadêmica:
 
+```bash
 app_restaurante/
 ├── 📄 Home.py                 # Página principal para o usuário
 ├── 📄 db_mongo.py             # Funções de interação com o MongoDB
@@ -51,7 +52,8 @@ app_restaurante/
 ├── 📁 .streamlit/
 │   └── 📄 config.toml         # Arquivo de tema do Streamlit
 └── 📁 pages/
-└── 📄 1_Painel_Admin.py   # Página do painel administrativo
+    └── 📄 1_Painel_Admin.py   # Página do painel administrativo
+```
 
 
 ## 🚀 Como Usar e Executar o Projeto
