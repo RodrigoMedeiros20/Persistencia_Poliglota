@@ -82,8 +82,7 @@ Siga os passos abaixo para executar a aplicação localmente.
 ### Executando a Aplicação
 
 1.  Certifique-se de que seu serviço do MongoDB está ativo.
-2.  Delete o arquivo `jantares.db` (se existir de uma execução anterior) para garantir que o banco de dados SQLite seja criado com a estrutura mais recente.
-3.  No terminal, a partir da pasta raiz do projeto, execute:
+2.  No terminal, a partir da pasta raiz do projeto, execute:
     ```bash
     streamlit run Home.py
     ```
