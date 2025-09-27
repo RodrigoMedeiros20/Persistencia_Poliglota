@@ -19,28 +19,28 @@ O projeto foi desenvolvido como uma solução prática para a proposta acadêmic
 
 ## 🏛️ Arquitetura e Como Funciona
 
-[cite_start]O núcleo do projeto é a utilização de dois sistemas de banco de dados distintos para otimizar o armazenamento de diferentes tipos de dados[cite: 3]:
+O núcleo do projeto é a utilização de dois sistemas de banco de dados distintos para otimizar o armazenamento de diferentes tipos de dados:
 
-* [cite_start]**SQLite**: Utilizado para armazenar dados altamente estruturados e relacionais, como Tipos de Cozinha e Bairros[cite: 8].
-* [cite_start]**MongoDB**: Utilizado para armazenar documentos semiestruturados no formato JSON, ideais para dados flexíveis como os detalhes dos restaurantes, que incluem coordenadas geográficas aninhadas[cite: 12, 13].
+* **SQLite**: Utilizado para armazenar dados altamente estruturados e relacionais, como Tipos de Cozinha e Bairros.
+* **MongoDB**: Utilizado para armazenar documentos semiestruturados no formato JSON, ideais para dados flexíveis como os detalhes dos restaurantes, que incluem coordenadas geográficas aninhadas.
 
-[cite_start]O fluxo de dados para o usuário final envolve a geocodificação do endereço fornecido, seguida por uma consulta de geoprocessamento que calcula a distância de cada restaurante (armazenado no MongoDB) até o ponto do usuário[cite: 28, 29, 31]. [cite_start]Os resultados são então enriquecidos com dados do SQLite (nomes das cozinhas e bairros) antes de serem exibidos[cite: 31].
+O fluxo de dados para o usuário final envolve a geocodificação do endereço fornecido, seguida por uma consulta de geoprocessamento que calcula a distância de cada restaurante (armazenado no MongoDB) até o ponto do usuário. Os resultados são então enriquecidos com dados do SQLite (nomes das cozinhas e bairros) antes de serem exibidos.
 
 ## 🛠️ Tecnologias Utilizadas
 
-[cite_start]O projeto foi construído com as seguintes tecnologias [cite: 48-55]:
+O projeto foi construído com as seguintes tecnologias:
 
-* [cite_start]**Backend:** Python 3.10+ [cite: 49]
-* [cite_start]**Interface Web:** Streamlit [cite: 50]
-* [cite_start]**Banco de Dados Relacional:** SQLite3 [cite: 51]
-* [cite_start]**Banco de Dados NoSQL:** MongoDB (com a biblioteca PyMongo) [cite: 52]
-* [cite_start]**Geoprocessamento:** Geopy [cite: 53]
-* [cite_start]**Mapas Interativos:** Folium [cite: 54]
-* [cite_start]**Manipulação de Dados:** Pandas [cite: 55]
+* **Backend:** Python 3.10+
+* **Interface Web:** Streamlit
+* **Banco de Dados Relacional:** SQLite3
+* **Banco de Dados NoSQL:** MongoDB (com a biblioteca PyMongo)
+* **Geoprocessamento:** Geopy
+* **Mapas Interativos:** Folium
+* **Manipulação de Dados:** Pandas
 
 ## 📁 Estrutura do Projeto
 
-[cite_start]A aplicação é estruturada como um projeto multi-páginas do Streamlit, uma evolução da estrutura sugerida na proposta acadêmica[cite: 46]:
+A aplicação é estruturada como um projeto multi-páginas do Streamlit, uma evolução da estrutura sugerida na proposta acadêmica:
 
 app_restaurante/
 ├── 📄 Home.py                 # Página principal para o usuário
